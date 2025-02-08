@@ -16,7 +16,7 @@
     <link type="text/css" rel="stylesheet"
       href="https://pham-asset.com/font-awesome.css"
       media="screen">
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"
+    <link type="text/css" rel="stylesheet" href="https://pham-asset.com/stylesheet.css"
       media="screen">
     <link type="text/css" rel="stylesheet"
       href="https://pham-asset.com/stylesheet.css"
@@ -53,9 +53,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <div id="highslide-container">
-
-      cHẢ CÓ GÌ
+    <div id="highslide-container"> 
       <div class="bg_top">
         <table style="width: 100%; border-collapse: collapse;" width
           align><tbody><tr><td
@@ -216,7 +214,7 @@
               </style>
 
         <div id="jssor_1"
-          style="position: relative; margin: 0px auto; top: 5px; left: 0px; width: 1587px; height: 495.937px; overflow: hidden; visibility: visible;"
+          style="position: relative; margin: 0px auto; top: 5px; left: 0px; height: 495.937px; overflow: hidden; visibility: visible;"
           data-jssor-slider="1">
           <!-- Loading Screen -->
           <div
@@ -287,7 +285,7 @@
           GIỚI CỦA JOJO</span>
       </div>
       <div class="body">
-        <link type="text/css" rel="stylesheet" href="stylesheet.css"
+        <link type="text/css" rel="stylesheet" href="https://pham-asset.com/stylesheet.css"
           media="screen">
 
         <link rel="stylesheet" type="text/css"
@@ -1158,7 +1156,7 @@
             max-width: 160px;
             /*padding-left: 35px;*/
             text-align: left;
-            background: url(/img/bg_hotline.png) no-repeat left center;
+            background: url(https://pham-asset.com/img/bg_hotline.png) no-repeat left center;
             padding: 10px 0;
             color: #fff;
             animation: animatedBackground 1s linear infinite;
@@ -1177,29 +1175,29 @@
       </style>
 
     <script type="text/javascript">
-        var textBox = document.getElementById('textbox2'),
-          resultContainer = document.getElementById('result')
+        // var textBox = document.getElementById('textbox2'),
+        //   resultContainer = document.getElementById('result')
       
-        // keep this global to abort it if already a request is running even textbox is upated
-        var ajax = null;
-        var loadedUsers = 0; // number of users shown in the results
+        // // keep this global to abort it if already a request is running even textbox is upated
+        // var ajax = null;
+        // var loadedUsers = 0; // number of users shown in the results
       
-        textBox.onkeyup = function() {
-          // "this" refers to the textbox
-          var val = this.value;
+        // textBox.onkeyup = function() {
+        //   // "this" refers to the textbox
+        //   var val = this.value;
       
-          // trim - remove spaces in the begining and the end
-          val = val.replace(/^\s|\s+$/, "");
+        //   // trim - remove spaces in the begining and the end
+        //   val = val.replace(/^\s|\s+$/, "");
       
-          // check if the value is not empty
-          if (val !== "") {
-            // search for data
-            searchForData(val);
-          } else {
-            // clear the result content
-            clearResult();
-          }
-        }
+        //   // check if the value is not empty
+        //   if (val !== "") {
+        //     // search for data
+        //     searchForData(val);
+        //   } else {
+        //     // clear the result content
+        //     clearResult();
+        //   }
+        // }
       
       
         function searchForData(value, isLoadMoreMode) {
