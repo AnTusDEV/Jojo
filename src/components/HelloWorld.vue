@@ -1,5 +1,7 @@
 <template>
-  <div>Chả cần 2 người đưng</div>
+  <div> 
+    
+  </div>
 </template>
 
 <script>

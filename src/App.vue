@@ -1,25 +1,20 @@
-<script setup lang="ts">
-// import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
-</script>
-
+ 
 <script>
+import {  RouterView } from "vue-router";
+// import HelloWorld from "./components/HelloWorld.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    // HelloWorld,
+    // RouterLink,
+    RouterView
   },
 };
 </script>
 
 <template>
   <header>
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+    <div class="wrapper">  
     </div>
   </header>
 
@@ -28,7 +23,7 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
