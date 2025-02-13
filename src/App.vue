@@ -1,9 +1,11 @@
  
 <script>
-import {  RouterView} from "vue-router"; 
+import {  RouterView } from "vue-router";
+// import HelloWorld from "./components/HelloWorld.vue";
 export default {
   name: "App",
-  components: { 
+  components: {
+    // HelloWorld,
     // RouterLink,
     RouterView
   },
@@ -11,7 +13,11 @@ export default {
 </script>
 
 <template>
-  <!-- HEADER WEBSITE --> 
+  <header>
+    <div class="wrapper">  
+    </div>
+  </header>
+
   <RouterView />
 </template>
 
@@ -21,6 +27,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50; 
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div> 
-      An Tú
+    
   </div>
 </template>
 
