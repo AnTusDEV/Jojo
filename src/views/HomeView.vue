@@ -1,14 +1,14 @@
 <script>
-import TheWelcome from "../components/HelloWorld.vue";
+import TitlePage from "../components/TitleHomePage.vue";
 export default {
   components: {
-    TheWelcome,
+    TitlePage,
   },
 };
 </script>
 
 <template> 
   <main>
-    <TheWelcome />
+    <TitlePage />
   </main>
 </template>
