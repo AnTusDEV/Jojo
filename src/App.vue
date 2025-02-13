@@ -12,12 +12,7 @@ export default {
 };
 </script>
 
-<template>
-  <header>
-    <div class="wrapper">  
-    </div>
-  </header>
-
+<template> 
   <RouterView />
 </template>
 
@@ -31,3 +26,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+-----------------------------------------------

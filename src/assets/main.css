@@ -1,35 +1,159 @@
-/* @import './base.css'; */
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+/*Mobile*/
+@media (max-width: 769px) {
+  .desktop{
+      display: none !important;
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+@media (min-width: 769px) {
+  .mobile {
+      display: none;
   }
+}
+/*Mobile*/
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+/*Bo Call*/
+.chatbox{
+position: fixed;
+bottom: 48px;
+height: 40px;
+z-index: 99999;
+}
+
+.chatbox .success1.is-underline:hover, .success1.is-outline:hover, .success1 {
+/*background-color: #1E73BE;*/
+padding: 7px 0px;
+color: white !important;
+}
+
+.chatbox .success2.is-underline:hover, .success2.is-outline:hover, .success2 {
+/*background-color: #ff4800;*/
+padding: 7px 0px;
+color: white !important;
+}
+
+.chatboxmb .success3.is-underline:hover, .success3.is-outline:hover, .success3 {
+/*background-color: #00a63f;*/
+padding: 7px 0px;
+color: white !important;
+}
+
+.chatbox .call-mobile {
+/*background: #00a63f;*/
+position: fixed;
+bottom: 10px;
+height: 270px;
+line-height: 40px;
+padding: 5px 0px 0 0px;
+border-radius: 40px;
+color: #fff;
+right: 11px;
+z-index: 99999;
+}
+
+.chatbox .call-mobile1 {
+position: fixed;
+bottom: 44px;
+height:295px;
+line-height: 40px;
+padding: 0 0px 0 0px;
+border-radius: 40px;
+color: #fff;
+right: 20px;
+z-index: 99999;
+}
+
+.chatbox .call-mobile2 {
+position: fixed;
+bottom: 80px;
+height: 320px;
+line-height: 40px;
+padding: 0 0px 0 0px;
+border-radius: 40px;
+color: #fff;
+right: 20px;
+z-index: 99999;
+}
+
+.chatbox .call-mobile a {
+color: #fff;
+font-size: 15px;
+font-weight: bold;
+text-decoration: none;
+margin-right: 10px;
+padding-left: 10px;
+}
+
+.chatbox .button span {
+text-transform: initial;
+font-weight: 400;
+font-family: poppins;
+}
+
+.chatbox a#callnowbutton {
+font-family: poppins;
+font-weight: 400;
+}
+
+.chatboxmb {
+position: fixed;
+bottom: 5px;
+width: 100%;
+}
+/*Bo Call*/
+
+/*Bo dien thoai*/
+.fixed_hotline {
+height: 40px;
+width: 200px;
+position: fixed;
+z-index: 1001;
+bottom: 11px;
+left:10px;
+text-align: center;
+display: block;
+}
+
+.fixed_hotline .hotlines {
+display: block;
+line-height: 30px;
+margin: 0 auto;
+max-width: 160px;
+/*padding-left: 35px;*/
+text-align: left;
+background: url(https://pham-asset.com/img/bg_hotline.png) no-repeat left center;
+padding: 10px 0;
+color: #fff;
+animation: animatedBackground 1s linear infinite;
+}
+
+.fixed_hotline .hotlines a {
+color: #fff;
+font-weight: 700;
+font-size: 17px;
+font-family: 'Roboto Condensed',sans-serif;
+padding-left: 40px;
+display: block;
+}
+/*Bo dien thoai*/
+.jssora051 {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.jssora051 .a {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 360;
+  stroke-miterlimit: 10;
+}
+.jssora051:hover {
+  opacity: 0.8;
+}
+.jssora051.jssora051dn {
+  opacity: 0.5;
+}
+.jssora051.jssora051ds {
+  opacity: 0.3;
+  pointer-events: none;
 }

@@ -1,15 +1,2024 @@
 <template>
-  <div> 
-    
+  <div id="highslide-container">
+    <div class="bg_top">
+      <table style="width: 100%; border-collapse: collapse" width align>
+        <tbody>
+          <tr>
+            <td
+              style="text-align: left; letter-spacing: 0px; word-spacing: 0px"
+            >
+              <img
+                src="https://pham-asset.com/upload/logo.png"
+                title
+                alt
+                border="0px"
+              /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="bg_menu_top">
+      <div class="body_menu" style="position: relative">
+        <div class="menu_top_left">
+          <link
+            rel="stylesheet"
+            href="https://pham-asset.com/cssmenu1/styles.css"
+          />
+
+          <div id="cssmenu1" style="z-index: 10001">
+            <div id="menu-button">
+              M e n u
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <ul>
+              <li><a href="https://pham-asset.com/">Trang chủ</a></li>
+              <li>
+                <a href="https://pham-asset.com/gioi-thieu">Về chúng tôi</a>
+              </li>
+              <li class="has-sub">
+                <span class="submenu-button"></span
+                ><a href="https://pham-asset.com/san-pham">Sản phẩm</a>
+                <ul>
+                  <li class="has-sub">
+                    <span class="submenu-button"></span
+                    ><a href="https://pham-asset.com/san-pham/snack-1.html"
+                      >SNACK</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://pham-asset.com/san-pham/snack-jojo-7.html"
+                          >Snack JOJO</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://pham-asset.com/san-pham/snack-tanoshi-8.html"
+                          >Snack Tanoshi</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="has-sub">
+                    <span class="submenu-button"></span
+                    ><a
+                      href="https://pham-asset.com/san-pham/banh-xop-ong-2.html"
+                      >Bánh xốp ống</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://pham-asset.com/san-pham/banh-xop-jojo-9.html"
+                          >Bánh Xốp JOJO</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://pham-asset.com/san-pham/banh-xop-tanoshi-10.html"
+                          >Bánh Xốp Tanoshi</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://pham-asset.com/san-pham/san-pham-hat-jojo-12.html"
+                      >Sản Phẩm Hạt JOJO</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://pham-asset.com/san-pham/dau-phong-da-ca-3.html"
+                      >Đậu phộng da cá</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://pham-asset.com/san-pham/phoi-snack-4.html"
+                      >Phôi Snack</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://pham-asset.com/san-pham/rau-cau-5.html"
+                      >Rau Câu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://pham-asset.com/san-pham/nuoc-va-ca-phe-hoa-tan-6.html"
+                      >Nước Và Cà Phê Hòa Tan</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="https://pham-asset.com/tin-tuc">Bản tin</a></li>
+              <li><a href="https://pham-asset.com/lien-he">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu_top_right">
+          <div class="bg_search">
+            <form
+              action="/tim-kiem.html"
+              enctype="multipart/form-data"
+              method="get"
+              name="frmSearch"
+              id="frmSearch"
+            >
+              <table border="0" cellspacing="0" cellpadding="0" width="98%">
+                <tbody>
+                  <tr>
+                    <td>
+                      <input
+                        name="key"
+                        type="text"
+                        style="width: 90%"
+                        id="textbox"
+                        placeholder="Tìm kiếm"
+                      />
+                    </td>
+                    <td width="30" align="center">
+                      <img
+                        alt="pham asset"
+                        src="https://pham-asset.com/images/i-search6.jpg"
+                        style="margin-top: 0px; cursor: pointer"
+                        onclick="document.getElementById('frmSearch').submit()"
+                      />
+                    </td>
+                    <td width="70" align="center" style="padding-left: 10px">
+                      <img
+                        src="https://pham-asset.com/images/lang_en.png"
+                        onclick="window.location='?l=en'"
+                        style="cursor: pointer"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+        <div style="clear: both; height: 0px"></div>
+      </div>
+    </div>
+    <div class="flash">
+     
+
+      <div
+        id="jssor_1"
+        style="
+          position: relative;
+          margin: 0px auto;
+          top: 5px;
+          left: 0px;
+          height: 495.937px;
+          overflow: hidden;
+          visibility: visible;
+        "
+        data-jssor-slider="1"
+      >
+        <!-- Loading Screen -->
+        <div
+          style="
+            position: absolute;
+            display: block;
+            top: 0px;
+            left: 0px;
+            width: 1587px;
+            height: 495.937px;
+          "
+        >
+          <div
+            style="
+              position: absolute;
+              display: block;
+              top: 47.9687px;
+              left: 153.5px;
+              width: 1280px;
+              height: 400px;
+              transform: scale(1.24108);
+            "
+          >
+            <div
+              data-u="slides"
+              style="
+                cursor: default;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 1280px;
+                height: 400px;
+                overflow: hidden;
+                margin: 0px;
+                padding: 0px;
+                transform-style: flat;
+                z-index: 0;
+                pointer-events: none;
+              "
+            >
+              <div
+                style="
+                  top: 0px;
+                  left: 0px;
+                  width: 1280px;
+                  height: 400px;
+                  position: absolute;
+                  display: block;
+                  z-index: 0;
+                "
+              ></div>
+            </div>
+            <div
+              data-u="slides"
+              style="
+                cursor: default;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 1280px;
+                height: 400px;
+                overflow: hidden;
+                margin: 0px;
+                padding: 0px;
+                transform-style: flat;
+                z-index: 0;
+              "
+            >
+              <div
+                style="
+                  top: 0px;
+                  left: 22.3362px;
+                  width: 1280px;
+                  height: 400px;
+                  position: absolute;
+                  overflow: hidden;
+                  transform-style: flat;
+                  z-index: 1;
+                "
+              >
+                <div
+                  style="
+                    top: 0px;
+                    left: 0px;
+                    width: 1280px;
+                    height: 400px;
+                    position: absolute;
+                    display: block;
+                    overflow: hidden;
+                    background-color: rgba(0, 0, 0, 0);
+                    background-image: none;
+                  "
+                >
+                  <img
+                    u="image"
+                    src2="/images/Flash/o6nq834a.jpg"
+                    alt="pham asset"
+                    border="0"
+                    style="
+                      top: 0px;
+                      left: 0px;
+                      width: 1280px;
+                      height: 400px;
+                      position: absolute;
+                      display: block;
+                      max-width: 10000px;
+                      z-index: 1;
+                    "
+                    data-events="auto"
+                    data-display="block"
+                    src="https://pham-asset.com/images/Flash/o6nq834a.jpg"
+                  />
+                </div>
+                <div
+                  style="
+                    top: 0px;
+                    left: 0px;
+                    width: 1280px;
+                    height: 400px;
+                    position: absolute;
+                    display: block;
+                    transform-style: preserve-3d;
+                    z-index: 1;
+                  "
+                  data-events="auto"
+                  data-display="block"
+                >
+                  <a
+                    href="#link"
+                    data-events="auto"
+                    data-display="inline"
+                    style="
+                      z-index: 1;
+                      top: 0px;
+                      left: 0px;
+                      width: 1280px;
+                      height: 400px;
+                      position: absolute;
+                      display: block;
+                    "
+                  ></a>
+                </div>
+              </div>
+              <div
+                style="
+                  top: 0px;
+                  left: -1257.66px;
+                  width: 1280px;
+                  height: 400px;
+                  position: absolute;
+                  overflow: hidden;
+                  transform-style: flat;
+                  z-index: 1;
+                "
+              >
+                <div
+                  style="
+                    top: 0px;
+                    left: 0px;
+                    width: 1280px;
+                    height: 400px;
+                    position: absolute;
+                    display: block;
+                    overflow: hidden;
+                    background-color: rgba(0, 0, 0, 0);
+                    background-image: none;
+                  "
+                >
+                  <img
+                    u="image"
+                    src2="/images/Flash/75cm7gl8.jpg"
+                    alt="pham asset"
+                    border="0"
+                    style="
+                      top: 0px;
+                      left: 0px;
+                      width: 1280px;
+                      height: 400px;
+                      position: absolute;
+                      display: block;
+                      max-width: 10000px;
+                      z-index: 1;
+                    "
+                    data-events="auto"
+                    data-display="block"
+                    src="https://pham-asset.com/images/Flash/75cm7gl8.jpg"
+                  />
+                </div>
+                <div
+                  style="
+                    top: 0px;
+                    left: 0px;
+                    width: 1280px;
+                    height: 400px;
+                    position: absolute;
+                    display: block;
+                    transform-style: preserve-3d;
+                    z-index: 1;
+                  "
+                  data-events="auto"
+                  data-display="block"
+                >
+                  <a
+                    href="#link"
+                    data-events="auto"
+                    data-display="inline"
+                    style="
+                      z-index: 1;
+                      top: 0px;
+                      left: 0px;
+                      width: 1280px;
+                      height: 400px;
+                      position: absolute;
+                      display: block;
+                    "
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div
+          style="
+            position: absolute;
+            display: block;
+            top: 209.782px;
+            left: 29.3741px;
+            width: 76.3728px;
+            height: 76.3728px;
+          "
+        >
+          <div
+            data-u="arrowleft"
+            class="jssora051"
+            style="
+              width: 65px;
+              height: 65px;
+              top: 5.68639px;
+              left: 5.68639px;
+              transform: scale(1.17497);
+            "
+            data-autocenter="2"
+            data-scale="0.75"
+            data-scale-left="0.75"
+            data-jssor-button="1"
+            data-nofreeze="1"
+          >
+            <svg
+              viewBox="0 0 16000 16000"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <polyline
+                class="a"
+                points="11040,1920 4960,8000 11040,14080 "
+              ></polyline>
+            </svg>
+          </div>
+        </div>
+        <div
+          style="
+            position: absolute;
+            display: block;
+            top: 209.782px;
+            right: 29.3741px;
+            width: 76.3728px;
+            height: 76.3728px;
+          "
+        >
+          <div
+            data-u="arrowright"
+            class="jssora051"
+            style="
+              width: 65px;
+              height: 65px;
+              top: 5.68639px;
+              right: 25px;
+              left: 5.68639px;
+              transform: scale(1.17497);
+            "
+            data-autocenter="2"
+            data-scale="0.75"
+            data-scale-right="0.75"
+            data-jssor-button="1"
+            data-nofreeze="1"
+          >
+            <svg
+              viewBox="0 0 16000 16000"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <polyline
+                class="a"
+                points="4960,1920 11040,8000 4960,14080 "
+              ></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg_slogan">
+      <span style="font-family: sans-serif"
+        >CHÀO MỪNG BẠN ĐẾN VỚI THẾ GIỚI CỦA JOJO</span
+      >
+    </div>
+    <div class="body">
+      <link
+        type="text/css"
+        rel="stylesheet"
+        href="https://pham-asset.com/stylesheet.css"
+        media="screen"
+      />
+
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://pham-asset.com/jcarousel2/jcarousel.responsive.css"
+      />
+
+      <div class="bg_danhgia">
+        <div class="body2" style="padding: 1% 0 2% 0">
+          <div class="title_page_home">
+            <a href="https://pham-asset.com/san-pham">Sản phẩm nổi bật</a>
+          </div>
+          <div class="jcarousel2-wrapper">
+            <div
+              class="jcarousel2"
+              data-jcarousel="true"
+              data-jcarouselautoscroll="true"
+            >
+              <ul style="left: -2310px; top: 0px">
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/snack-cua-da-nen-fzp5s705.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>SNACK CUA</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/angia-sweets-snacks-35-1-iuqptv46.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>Rau Câu Bốn Mùa</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/angia-sweets-snacks-25-da-nen-hinh-anh-1-98p1297w.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>ĐẬU RÒN RÒN VỊ TÔM CAY NƯỚNG MUỐI ỚT</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/snack-party-mix-full-7an8i005.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>ĐẬU PHỘNG MIX PARTY</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/cafe-jl7wrij4.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>CÀ PHÊ HOÀ TAN MIRANO</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/e3768a9e-8a05-4cd5-a8f3-cdbb959294c3-5g17a215.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>ĐẬU PHỘNG DA CÁ VỊ THỊT NƯỚNG</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/angia-sweets-snacks-25-da-nen-hinh-anh-0-1-w10q00tm.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>ĐẬU RÒN RÒN VỊ NƯỚC CỐT DỪA</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/69bf5537-cf2a-42db-83df-4853f169ed4f-11b6g5jh.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>ĐẬU PHỘNG NƯỚC CỐT DỪA</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/d800c912-5524-49d3-95f3-80cd2a4dae75-95zx668g.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>BÁNH XỐP ỐNG NHÂN KEM VỊ MATCHA (lon)</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/b3267619-ee9d-42bf-a41b-b1e7961f4148-d8y4096d.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>SNACK GÀ NƯỚNG</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/e753b511-3072-4229-aad8-86d35f833286-54vl8442.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>SNACK KHOAI TÂY QUE</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/d9ab9e4c-37b2-4076-a804-6db4d010e22f-02g2ff4z.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>SNACK MỰC SIÊU CAY NƯỚNG</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/7afd053d-7786-4c96-a443-cd584a8fe842-68rlw88m.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>SNACK RAU CỦ QUẢ</strong>
+                  </div>
+                </li>
+                <li style="width: 365px">
+                  <div
+                    class="hotnews_img"
+                    style="height: 300px; overflow: hidden"
+                  >
+                    <img
+                      src="https://pham-asset.com/images/Products/0df81c60-aabf-4241-8eae-ee54765298cb-oz9c8y21.jpg"
+                    />
+                  </div>
+                  <div
+                    class="hotnews_name"
+                    style="
+                      color: #da251e;
+                      height: 25px;
+                      overflow: hidden;
+                      text-align: center;
+                    "
+                  >
+                    <strong>SNACK TẢO BIỂN</strong>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a
+              href="#"
+              class="jcarousel2-control-prev"
+              data-jcarouselcontrol="true"
+              >‹</a
+            >
+            <a
+              href="#"
+              class="jcarousel2-control-next"
+              data-jcarouselcontrol="true"
+              >›</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="cate_image">
+        <a href="https://pham-asset.com/san-pham/snack-1.html"
+          ><img
+            width="100%"
+            src="https://pham-asset.com/images/Category/snack-5t0ms0xo.jpg"
+            alt="pham asset"
+        /></a>
+      </div>
+      <div class="body" style="margin-top: 2%">
+        <div class="title_page_home">
+          <a href="https://pham-asset.com/san-pham/snack-1.html">SNACK</a>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/dau-phong-mix-party-37.html"
+              ><img
+                src="https://pham-asset.com/images/Products/snack-party-mix-full-7an8i005.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/dau-phong-mix-party-37.html"
+              >ĐẬU PHỘNG MIX PARTY</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/snack-jojo-7/dau-phong-mix-party-37.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-ga-nuong-6.html"
+              ><img
+                src="https://pham-asset.com/images/Products/b3267619-ee9d-42bf-a41b-b1e7961f4148-d8y4096d.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-ga-nuong-6.html"
+              >SNACK GÀ NƯỚNG</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/snack-jojo-7/snack-ga-nuong-6.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-khoai-tay-que-5.html"
+              ><img
+                src="https://pham-asset.com/images/Products/e753b511-3072-4229-aad8-86d35f833286-54vl8442.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-khoai-tay-que-5.html"
+              >SNACK KHOAI TÂY QUE</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/snack-jojo-7/snack-khoai-tay-que-5.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-muc-sieu-cay-nuong-3.html"
+              ><img
+                src="https://pham-asset.com/images/Products/d9ab9e4c-37b2-4076-a804-6db4d010e22f-02g2ff4z.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-muc-sieu-cay-nuong-3.html"
+              >SNACK MỰC SIÊU CAY NƯỚNG</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/snack-jojo-7/snack-muc-sieu-cay-nuong-3.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-rau-cu-qua-2.html"
+              ><img
+                src="https://pham-asset.com/images/Products/7afd053d-7786-4c96-a443-cd584a8fe842-68rlw88m.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-rau-cu-qua-2.html"
+              >SNACK RAU CỦ QUẢ</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/snack-jojo-7/snack-rau-cu-qua-2.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-tao-bien-1.html"
+              ><img
+                src="https://pham-asset.com/images/Products/0df81c60-aabf-4241-8eae-ee54765298cb-oz9c8y21.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-tao-bien-1.html"
+              >SNACK TẢO BIỂN</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/snack-jojo-7/snack-tao-bien-1.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div style="clear: both; height: 20px"></div>
+      </div>
+      <div class="cate_image">
+        <a href="https://pham-asset.com/san-pham/banh-xop-ong-2.html"
+          ><img
+            width="100%"
+            src="https://pham-asset.com/images/Category/banh-xop-ong-fx44b9oc.jpg"
+            alt="pham asset"
+        /></a>
+      </div>
+      <div class="body" style="margin-top: 2%">
+        <div class="title_page_home">
+          <a href="https://pham-asset.com/san-pham/banh-xop-ong-2.html"
+            >Bánh xốp ống</a
+          >
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-tanoshi-10/banh-xop-nhan-kem-vi-matcha-bac-ha-36.html"
+              ><img
+                src="https://pham-asset.com/images/Products/06-gib5t13m.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-tanoshi-10/banh-xop-nhan-kem-vi-matcha-bac-ha-36.html"
+              >BÁNH XỐP NHÂN KEM VỊ MATCHA BẠC HÀ</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/banh-xop-tanoshi-10/banh-xop-nhan-kem-vi-matcha-bac-ha-36.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-tanoshi-10/banh-xop-nhan-kem-vi-socola-chuoi-35.html"
+              ><img
+                src="https://pham-asset.com/images/Products/05-a894o96y.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-tanoshi-10/banh-xop-nhan-kem-vi-socola-chuoi-35.html"
+              >BÁNH XỐP NHÂN KEM VỊ SOCOLA CHUỐI</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/banh-xop-tanoshi-10/banh-xop-nhan-kem-vi-socola-chuoi-35.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-nhan-kem-huong-blueberry-17.html"
+              ><img
+                src="https://pham-asset.com/images/Products/147a447c-735e-4cf1-bb81-1902ab1b9e59-y261b282.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-nhan-kem-huong-blueberry-17.html"
+              >BÁNH XỐP NHÂN KEM HƯƠNG BLUEBERRY</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/banh-xop-jojo-9/banh-xop-nhan-kem-huong-blueberry-17.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-nhan-kem-huong-socola-hanh-nhan-16.html"
+              ><img
+                src="https://pham-asset.com/images/Products/11df95ba-1232-46c5-afb0-808d7c40cd99-2b79i59l.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-nhan-kem-huong-socola-hanh-nhan-16.html"
+              >BÁNH XỐP NHÂN KEM HƯƠNG SÔCÔLA HẠNH NHÂN</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/banh-xop-jojo-9/banh-xop-nhan-kem-huong-socola-hanh-nhan-16.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-cam-15.html"
+              ><img
+                src="https://pham-asset.com/images/Products/img-0212-copy-copy-copy-copy-copy-copy-copy-a9p8sg1a.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-cam-15.html"
+              >BÁNH XỐP ỐNG NHÂN KEM VỊ CAM</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-cam-15.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-pho-mai-14.html"
+              ><img
+                src="https://pham-asset.com/images/Products/banh-xop-pho-mai-merge-1-z5nw5ifu.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-pho-mai-14.html"
+              >BÁNH XỐP ỐNG NHÂN KEM VỊ PHÔ MAI</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-pho-mai-14.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-la-dua-13.html"
+              ><img
+                src="https://pham-asset.com/images/Products/b96a733a-c26b-436a-98f1-cefa6281fb85-od3gshb4.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-la-dua-13.html"
+              >BÁNH XỐP ỐNG NHÂN KEM VỊ LÁ DỨA</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-la-dua-13.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-ong-cao-cap-nhan-socola-12.html"
+              ><img
+                src="https://pham-asset.com/images/Products/3e0e55c0-a423-462c-a0d6-efd0f248db2c-kg811drb.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-ong-cao-cap-nhan-socola-12.html"
+              >BÁNH XỐP ỐNG CAO CẤP NHÂN SÔCÔLA</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/banh-xop-jojo-9/banh-xop-ong-cao-cap-nhan-socola-12.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-matcha-lon-11.html"
+              ><img
+                src="https://pham-asset.com/images/Products/d800c912-5524-49d3-95f3-80cd2a4dae75-95zx668g.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-matcha-lon-11.html"
+              >BÁNH XỐP ỐNG NHÂN KEM VỊ MATCHA (lon)</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/banh-xop-jojo-9/banh-xop-ong-nhan-kem-vi-matcha-lon-11.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div style="clear: both; height: 20px"></div>
+      </div>
+      <div class="cate_image">
+        <a href="https://pham-asset.com/san-pham/dau-phong-da-ca-3.html"
+          ><img
+            width="100%"
+            src="https://pham-asset.com/images/Category/dau-phong-da-ca-b5i7l9gc.jpg"
+            alt="pham asset"
+        /></a>
+      </div>
+      <div class="body" style="margin-top: 2%">
+        <div class="title_page_home">
+          <a href="https://pham-asset.com/san-pham/dau-phong-da-ca-3.html"
+            >Đậu phộng da cá</a
+          >
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/dau-phong-da-ca-3/dau-ron-ron-vi-tom-cay-nuong-muoi-ot-38.html"
+              ><img
+                src="https://pham-asset.com/images/Products/angia-sweets-snacks-25-da-nen-hinh-anh-1-98p1297w.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/dau-phong-da-ca-3/dau-ron-ron-vi-tom-cay-nuong-muoi-ot-38.html"
+              >ĐẬU RÒN RÒN VỊ TÔM CAY NƯỚNG MUỐI ỚT</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/dau-phong-da-ca-3/dau-ron-ron-vi-tom-cay-nuong-muoi-ot-38.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/dau-phong-da-ca-3/dau-phong-da-ca-vi-thit-nuong-21.html"
+              ><img
+                src="https://pham-asset.com/images/Products/e3768a9e-8a05-4cd5-a8f3-cdbb959294c3-5g17a215.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/dau-phong-da-ca-3/dau-phong-da-ca-vi-thit-nuong-21.html"
+              >ĐẬU PHỘNG DA CÁ VỊ THỊT NƯỚNG</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/dau-phong-da-ca-3/dau-phong-da-ca-vi-thit-nuong-21.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/dau-phong-da-ca-3/dau-ron-ron-vi-nuoc-cot-dua-20.html"
+              ><img
+                src="https://pham-asset.com/images/Products/angia-sweets-snacks-25-da-nen-hinh-anh-0-1-w10q00tm.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/dau-phong-da-ca-3/dau-ron-ron-vi-nuoc-cot-dua-20.html"
+              >ĐẬU RÒN RÒN VỊ NƯỚC CỐT DỪA</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/dau-phong-da-ca-3/dau-ron-ron-vi-nuoc-cot-dua-20.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/dau-phong-da-ca-3/dau-phong-nuoc-cot-dua-18.html"
+              ><img
+                src="https://pham-asset.com/images/Products/69bf5537-cf2a-42db-83df-4853f169ed4f-11b6g5jh.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/dau-phong-da-ca-3/dau-phong-nuoc-cot-dua-18.html"
+              >ĐẬU PHỘNG NƯỚC CỐT DỪA</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/dau-phong-da-ca-3/dau-phong-nuoc-cot-dua-18.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div style="clear: both; height: 20px"></div>
+      </div>
+      <div class="cate_image">
+        <a href="https://pham-asset.com/san-pham/phoi-snack-4.html"></a>
+      </div>
+      <div class="body" style="margin-top: 2%">
+        <div class="title_page_home">
+          <a href="https://pham-asset.com/san-pham/phoi-snack-4.html"
+            >Phôi Snack</a
+          >
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/phoi-snack-4/vien-ca-muc-25.html"
+              ><img
+                src="https://pham-asset.com/images/Products/04-8pcgib62.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/phoi-snack-4/vien-ca-muc-25.html"
+              >VIÊN CÁ MỰC</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/phoi-snack-4/vien-ca-muc-25.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/phoi-snack-4/phoi-tom-thai-24.html"
+              ><img
+                src="https://pham-asset.com/images/Products/03-23mxpqw6.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/phoi-snack-4/phoi-tom-thai-24.html"
+              >PHÔI TÔM THÁI</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/phoi-snack-4/phoi-tom-thai-24.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/phoi-snack-4/phoi-khoai-tay-que-23.html"
+              ><img
+                src="https://pham-asset.com/images/Products/02-21r6e4s4.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/phoi-snack-4/phoi-khoai-tay-que-23.html"
+              >PHÔI KHOAI TÂY QUE</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/phoi-snack-4/phoi-khoai-tay-que-23.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div class="item_product">
+          <div class="product_image_list">
+            <a
+              href="https://pham-asset.com/san-pham/phoi-snack-4/phoi-rau-cu-qua-22.html"
+              ><img
+                src="https://pham-asset.com/images/Products/01-ef679c1z.jpg"
+            /></a>
+          </div>
+          <div class="product_name" style="font-weight: bold; margin: 4% 0">
+            <a
+              href="https://pham-asset.com/san-pham/phoi-snack-4/phoi-rau-cu-qua-22.html"
+              >PHÔI RAU CỦ QUẢ</a
+            >
+          </div>
+          <div
+            class="b_muangay"
+            style="margin-bottom: 6%"
+            onclick="window.location='/san-pham/phoi-snack-4/phoi-rau-cu-qua-22.html'"
+          >
+            Mua ngay
+          </div>
+        </div>
+        <div style="clear: both; height: 20px"></div>
+      </div>
+
+      <div class="body">
+        <img
+          src="https://pham-asset.com/upload/banner.png"
+          title
+          alt
+          width="100%px"
+          border="0"
+        />
+      </div>
+    </div>
+    <div class="body_footer">
+      <div class="item_hotro">
+        <table style="border-collapse: collapse; width: 100%">
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://pham-asset.com/upload/truck.png"
+                  title
+                  alt
+                  border="0px"
+                /><br />
+              </td>
+              <td>
+                <table style="border-collapse: collapse; width: 100%">
+                  <tbody>
+                    <tr>
+                      <td>VẬN CHUYỂN</td>
+                    </tr>
+                    <tr>
+                      <td>Miễn phí cho đơn hàng trên 1 triệu</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="item_hotro">
+        <table style="border-collapse: collapse; width: 100%">
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://pham-asset.com/upload/cargo.png"
+                  title
+                  alt
+                  border="0"
+                /><br />
+              </td>
+              <td>
+                <table style="border-collapse: collapse; width: 100%">
+                  <tbody>
+                    <tr>
+                      <td>HỖ TRỢ TƯ VẤN</td>
+                    </tr>
+                    <tr>
+                      <td>Thứ 2 - Thứ 7: 08h00 - 17h00</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="item_hotro">
+        <table style="border-collapse: collapse; width: 100%">
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://pham-asset.com/upload/support.png"
+                  title
+                  alt
+                  border="0"
+                /><br />
+              </td>
+              <td>
+                <table style="border-collapse: collapse; width: 100%">
+                  <tbody>
+                    <tr>
+                      <td>ĐẶT HÀNG NGAY</td>
+                    </tr>
+                    <tr>
+                      <td>028 37653286</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="item_hotro">
+        <table style="border-collapse: collapse; width: 100%">
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://pham-asset.com/upload/pay-2.png"
+                  title
+                  alt
+                  border="0"
+                /><br />
+              </td>
+              <td>
+                <table style="border-collapse: collapse; width: 100%">
+                  <tbody>
+                    <tr>
+                      <td>CHÍNH HÃNG</td>
+                    </tr>
+                    <tr>
+                      <td>Cam kết đảm bảo chất lượng 100%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="clear: both; height: 0px"></div>
+    </div>
+    <div class="body_form">
+      <div class="f_left">
+        <div class="t_lienhe_home">Thông tin công ty</div>
+        <table style="border-collapse: collapse; width: 100%">
+          <tbody>
+            <tr>
+              <td>
+                <span style="font-weight: bold"
+                  >Công ty Liên Doanh Phạm-Asset</span
+                ><br />Trụ sở chính: Lô D4/1, Đường 1B, Khu công nghiệp Vĩnh
+                Lộc, P. Bình Hưng Hòa B, Q. Bình Tân, TP.HCM, Việt Nam<br />ĐT:
+                (+84-28) 37 6532 84 / 85 / 86<br />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table style="border-collapse: collapse; width: 100%">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img
+                          src="https://pham-asset.com/upload/1.jpg"
+                          title
+                          alt
+                          border="0px"
+                        /><br />
+                      </td>
+                      <td>jojo@pham-asset.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="https://pham-asset.com/upload/2.jpg"
+                          title
+                          alt
+                          border="0px"
+                        /><br />
+                      </td>
+                      <td>
+                        Trụ sở chính: Lô D4/1, Đường 1B , Khu công nghiệp Vĩnh
+                        Lộc, Phường Bình Hưng Hòa B, Quận Bình Tân, TP.HCM, Việt
+                        Nam
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="https://pham-asset.com/upload/3.jpg"
+                          title
+                          alt
+                          border="0px"
+                        />
+                      </td>
+                      <td>028 37653286</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="https://pham-asset.com/upload/4.jpg"
+                          title
+                          alt
+                          border="0px"
+                        /><br />
+                      </td>
+                      <td>Luôn mở cửa</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="f_right">
+        <form
+          action="./?mode=send"
+          enctype="multipart/form-data"
+          method="post"
+          name="frmInformation"
+          id="frmInformation"
+          onsubmit="return submitForm()"
+        >
+          <div class="t_lienhe_home">Liên hệ với chúng tôi</div>
+          <div class="item_lienhe_home">
+            <div>Họ tên</div>
+            <div>
+              <input
+                name="Contact_Name"
+                type="text"
+                id="Contact_Name"
+                style="width: 100%"
+                value
+                class="text_lienhe"
+              />
+            </div>
+            <div style="clear: both"></div>
+          </div>
+          <div class="item_lienhe_home">
+            <div>Email</div>
+            <div>
+              <input
+                name="Contact_Email"
+                type="text"
+                id="Contact_Email"
+                style="width: 100%"
+                value
+                class="text_lienhe"
+              />
+            </div>
+            <div style="clear: both"></div>
+          </div>
+          <div class="item_lienhe_home">
+            <div>Điện thoại</div>
+            <div>
+              <input
+                name="Contact_Phone"
+                type="text"
+                id="Contact_Phone"
+                style="width: 100%"
+                value
+                class="text_lienhe"
+              />
+            </div>
+            <div style="clear: both"></div>
+          </div>
+          <div style="clear: both; height: 10px"></div>
+          <div>
+            <div>Nội dung</div>
+            <textarea
+              name="Contact_Content"
+              id="Contact_Content"
+              style="
+                width: 99%;
+                height: 50px;
+                overflow: auto;
+                border: solid 1px #4d7c98;
+              "
+            ></textarea>
+          </div>
+          <div class="item_lienhe_left">
+            <div class="b_guilienhe" onclick="submitForm()">
+              <strong> Gửi liên hệ </strong>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div style="clear: both; height: 0px"></div>
+    </div>
+
+    <div class="bg_footer">
+      <div class="body2">
+        <div class="footer_left">
+          <div>
+            <div>
+              <img
+                src="https://pham-asset.com/upload/logo.png"
+                title
+                alt
+                border="0px"
+                width="100"
+              /><br />
+            </div>
+            <span style="font-family: sans-serif"
+              >Công ty Liên Doanh Phạm-Asset <br />Trụ sở chính: Lô D4/1, Đường
+              1B, Khu công nghiệp Vĩnh Lộc, P.Bình Hưng Hòa B, Q. Bình Tân,
+              TP.HCM, Việt Nam<br />(+84-28) 37 653 284/85/86<br
+            /></span>
+            <div>
+              <span style="font-family: sans-serif"><br /></span>
+            </div>
+            <div>
+              <span
+                style="
+                  font-size: 18pt;
+                  background-color: rgb(255, 255, 255);
+                  text-align: justify;
+                  font-family: sans-serif;
+                "
+                ><a
+                  href="https://pham-asset.com/upload/ProfilePhamAssetJVC2023.pdf"
+                  target="_blank"
+                  style
+                  >Profile PhamAsset JVC 2023</a
+                ></span
+              >
+            </div>
+            <div>
+              <div
+                style="
+                  box-sizing: border-box;
+                  background-color: rgb(255, 255, 255);
+                  text-align: justify;
+                "
+              >
+                <span
+                  style="
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    font-family: Roboto, Roboto;
+                    color: rgb(33, 37, 41);
+                  "
+                  ><br
+                /></span>
+              </div>
+              <div
+                style="
+                  box-sizing: border-box;
+                  background-color: rgb(255, 255, 255);
+                  text-align: justify;
+                "
+              >
+                <span
+                  style="
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    font-family: Roboto, Roboto;
+                    color: rgb(33, 37, 41);
+                  "
+                  ><table width align style="border-collapse: collapse">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span style="font-size: 24pt"
+                            ><a
+                              href="https://pham-asset.com/upload/ProfilePhamAssetJVC2023.pdf"
+                              target="_blank"
+                              >Tải về</a
+                            ></span
+                          >
+                        </td>
+                        <td>
+                          <a
+                            href="https://pham-asset.com/upload/ProfilePhamAssetJVC2023.pdf"
+                            ><img
+                              src="https://pham-asset.comhttps://pham-asset.com/upload/icon-download-P.png"
+                              alt
+                              border="0px" /><br /><br
+                          /></a>
+                        </td>
+                      </tr>
+                    </tbody></table
+                ></span>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="t_lienhe_home">Cập nhật tin tức tại</div>
+          <div style="margin-top: 2%">
+            <table style="border-collapse: collapse; width: 100%">
+              <tbody>
+                <tr>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/congtyjojo?mibextid=ZbWKwL"
+                      ><img
+                        src="https://pham-asset.com/upload/fb-icon.png"
+                        alt
+                        border="0"
+                        style="margin-right: 20px" /></a
+                    ><a href="https://youtube.com/@phamasset3375"
+                      ><img
+                        src="https://pham-asset.com/upload/instagram-icon.png"
+                        alt
+                        border="0px"
+                        style="margin-right: 20px" /><img
+                        src="https://pham-asset.com/upload/youtube-icon.png"
+                        alt
+                        border="0px"
+                        style="margin-right: 20px" /></a
+                    ><br />
+                  </td>
+                </tr>
+                <tr>
+                  <td><hr /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://pham-asset.com/upload/icon_visa.png"
+                      title
+                      alt
+                      border="0px"
+                      style="margin-right: 20px"
+                    /><img
+                      src="https://pham-asset.com/upload/icon_ATMonline.png"
+                      title
+                      alt
+                      border="0px"
+                      style="margin-right: 20px"
+                    /><img
+                      src="https://pham-asset.com/upload/icon_bank_transfer.png"
+                      title
+                      alt
+                      border="0px"
+                      style="margin-right: 20px"
+                    /><img
+                      src="https://pham-asset.com/upload/icon_cod.png"
+                      title
+                      alt
+                      border="0px"
+                      style="margin-right: 20px"
+                    /><img
+                      src="https://pham-asset.com/upload/icon_zalo_pay.png"
+                      title
+                      alt
+                      border="0px"
+                    /><br />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="footer_center">
+          <div class="l">
+            <div class="menu_footer">
+              <a href="https://pham-asset.com/">Trang chủ</a>
+            </div>
+            <div class="menu_footer">
+              <a href="https://pham-asset.com/gioi-thieu">Về chúng tôi</a>
+            </div>
+            <div class="menu_footer">
+              <a href="https://pham-asset.com/san-pham">Sản phẩm</a>
+            </div>
+            <div class="menu_footer">
+              <a href="https://pham-asset.com/tin-tuc">Bản tin</a>
+            </div>
+            <div class="menu_footer">
+              <a href="https://pham-asset.com/lien-he">Liên hệ</a>
+            </div>
+          </div>
+          <div class="r">
+            <div class="menu_footer">
+              <a href="https://pham-asset.com/san-pham/snack-1.html">SNACK</a>
+            </div>
+            <div class="menu_footer">
+              <a href="https://pham-asset.com/san-pham/banh-xop-ong-2.html"
+                >Bánh xốp ống</a
+              >
+            </div>
+            <div class="menu_footer">
+              <a
+                href="https://pham-asset.com/san-pham/san-pham-hat-jojo-12.html"
+                >Sản Phẩm Hạt JOJO</a
+              >
+            </div>
+            <div class="menu_footer">
+              <a href="https://pham-asset.com/san-pham/dau-phong-da-ca-3.html"
+                >Đậu phộng da cá</a
+              >
+            </div>
+            <div class="menu_footer">
+              <a href="https://pham-asset.com/san-pham/phoi-snack-4.html"
+                >Phôi Snack</a
+              >
+            </div>
+            <div class="menu_footer">
+              <a href="https://pham-asset.com/san-pham/rau-cau-5.html"
+                >Rau Câu</a
+              >
+            </div>
+            <div class="menu_footer">
+              <a
+                href="https://pham-asset.com/san-pham/nuoc-va-ca-phe-hoa-tan-6.html"
+                >Nước Và Cà Phê Hòa Tan</a
+              >
+            </div>
+          </div>
+          <div style="clear: both; height: 0px"></div>
+        </div>
+        <div style="clear: both; height: 0px"></div>
+      </div>
+    </div>
+
+    <div class="bg_copyright">
+      <div align="center">
+        <span
+          style="
+            color: rgb(33, 37, 41);
+            font-family: Roboto, Roboto;
+            font-size: 14px;
+            text-align: center;
+          "
+          >Copyright © 2022 - Bản quyền thuộc về Pham-Asset.</span
+        >
+        | 595083 Lượt truy cập | 16 Đang trực tuyến
+      </div>
+    </div>
+  </div>
+
+  <div class="chatbox desktop">
+    <div class="call-mobile2">
+      <a
+        data-animate="fadeInDown"
+        href="https://zalo.me/0934314945"
+        target="_blank"
+        class="button success1"
+        style="border-radius: 99px"
+        data-animated="true"
+      >
+        <span
+          ><img
+            style="width: 60px"
+            src="https://pham-asset.com/img/Zalo.png"
+            alt="pham asset" /></span
+      ></a>
+    </div>
+
+    <div class="call-mobile1">
+      <a
+        data-animate="fadeInDown"
+        href="https://www.facebook.com/"
+        target="_blank"
+        class="button success2"
+        style="border-radius: 99px"
+        data-animated="true"
+      >
+        <span
+          ><img
+            style="width: 60px"
+            src="https://pham-asset.com/img/Face.png"
+            alt="pham asset" /></span
+      ></a>
+    </div>
+
+    <div class="call-mobile">
+      <a id="callnowbutton" href="tel:02837653286"
+        ><img
+          style="width: 60px"
+          src="https://pham-asset.com/img/Call.png"
+          alt="pham asset"
+      /></a>
+    </div>
+  </div>
+
+  <div class="chatboxmb mobile">
+    <div class="container">
+      <div class="text-center">
+        <a
+          data-animate="fadeInDown"
+          href="https://zalo.me/0934314945"
+          target="_blank"
+          class="button success1"
+          style="border-radius: 99px"
+          data-animated="true"
+        >
+          <span
+            ><img
+              style="width: 60px"
+              src="https://pham-asset.com/img/Zalo.png"
+              alt /></span
+        ></a>
+        <a
+          data-animate="fadeInDown"
+          href="https://www.facebook.com/"
+          target="_blank"
+          class="button success2"
+          style="border-radius: 99px"
+          data-animated="true"
+        >
+          <span
+            ><img
+              style="width: 60px"
+              src="https://pham-asset.com/img/Face.png"
+              alt /></span
+        ></a>
+        <a
+          style="border-radius: 40px"
+          class="button success3"
+          href="tel:02837653286"
+          title="ds"
+          ><img
+            style="width: 60px"
+            src="https://pham-asset.com/img/Call.png"
+            alt="pham asset"
+        /></a>
+      </div>
+    </div>
+  </div> 
+  <div class="desktop">
+    <div class="fixed_hotline">
+      <div class="hotlines">
+        <a href="tel:02837653286">02837653286</a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
-
