@@ -1,14 +1,16 @@
 <script>
-import TheWelcome from "../components/HelloWorld.vue";
-export default {
-  components: {
-    TheWelcome,
+console.log("ANTU");
+
+export default {  
+  computed:{ 
+    
+  },
+  components: { 
   },
 };
 </script>
 
 <template> 
-  <main>
-    <TheWelcome />
-  </main>
+<div> ANt u</div>
+
 </template>
