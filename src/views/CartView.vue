@@ -1,7 +1,10 @@
 <script>
 import axios from 'axios'; // Đảm bảo bạn đã import axios
-
+import MenuTop from "./MainMenuTop.vue"
 export default {
+  components: {
+    MenuTop
+    },
   data() {
     return {
       info: null // Khởi tạo info là null hoặc một giá trị mặc định khác
@@ -20,6 +23,7 @@ export default {
 </script>
 
 <template>
+  <MenuTop></MenuTop>
   <div>
     <div>Dữ liệu API CoinDesk</div>
     {{ info }}
