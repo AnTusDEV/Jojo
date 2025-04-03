@@ -116,59 +116,30 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Arrow Navigator -->
-      <div
-        style="position: absolute; display: block; top: 155.851px; left: 23.7443px; width: 61.7351px; height: 61.7351px;">
-        <div data-u="arrowleft" class="jssora051"
-          style="width: 65px; height: 65px; top: -1.63247px; left: -1.63247px; transform: scale(0.94977);"
-          data-autocenter="2" data-scale="0.75" data-scale-left="0.75" data-jssor-button="1" data-nofreeze="1">
-          <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-          </svg>
-        </div>
-      </div>
-      <div
-        style="position: absolute; display: block; top: 155.851px; right: 23.7443px; width: 61.7351px; height: 61.7351px;">
-        <div data-u="arrowright" class="jssora051"
-          style="width: 65px; height: 65px; top: -1.63247px; right: 25px; left: -1.63247px; transform: scale(0.94977);"
-          data-autocenter="2" data-scale="0.75" data-scale-right="0.75" data-jssor-button="1" data-nofreeze="1">
-          <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-          </svg>
-        </div>
-      </div>
+      </div> 
     </div>
 
   </div>
   <div class="bg_slogan">
     <span style="font-family: sans-serif;">CHÀO MỪNG BẠN ĐẾN VỚI THẾ GIỚI CỦA JOJO</span>
   </div>
-</template>
-<style> 
-.jssora051 {
-  display: block;
-  position: absolute;
-  cursor: pointer;
-}
-
-.jssora051 .a {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 360;
-  stroke-miterlimit: 10;
-}
-
-.jssora051:hover {
-  opacity: .8;
-}
-
-.jssora051.jssora051dn {
-  opacity: .5;
-}
-
-.jssora051.jssora051ds {
-  opacity: .3;
-  pointer-events: none;
-}
-</style>
+</template> 
+<script>
+import axios from 'axios';
+export default { 
+  data() {
+    return {
+      info: null  
+    };
+  },
+  mounted() {
+    axios
+      .get('http://localhost:8080/getBuyCart')
+      .then(response => (this.info = response.data)) // Gán response.data cho this.info
+      .catch(error => {
+        console.error('Lỗi khi gọi API:', error);
+        this.info = { error: 'Không thể tải dữ liệu từ API.' }; // Xử lý lỗi nếu có
+      });
+  },
+};
+</script> 
