@@ -145,8 +145,7 @@
     <span style="font-family: sans-serif;">CHÀO MỪNG BẠN ĐẾN VỚI THẾ GIỚI CỦA JOJO</span>
   </div>
 </template>
-<style>
-/*jssor slider arrow skin 051 css*/
+<style> 
 .jssora051 {
   display: block;
   position: absolute;

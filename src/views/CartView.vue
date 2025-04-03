@@ -1,6 +1,6 @@
 <script>
 import axios from 'axios'; // Đảm bảo bạn đã import axios
-import MenuTop from "./MainMenuTop.vue"
+import MenuTop from "../components/MainMenuTop.vue"
 export default {
   components: {
     MenuTop

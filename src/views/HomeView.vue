@@ -1,5 +1,5 @@
 <script>
-import MainMenu from "./MainMenuTop.vue"
+import MainMenu from "../components/MainMenuTop.vue"
 import Copyright from "../components/CopyRight.vue"
 import FooterHome from "../components/FooterHome.vue"
 import BodyForm from "../components/BodyForm.vue"
@@ -332,8 +332,7 @@ export default {
       <div class="cate_image"><a href="https://pham-asset.com/san-pham/dau-phong-da-ca-3.html"><img width="100%"
             src="https://pham-asset.com/images/Category/dau-phong-da-ca-b5i7l9gc.jpg" alt="pham asset"></a></div>
       <div class="body" style="margin-top:2%">
-        <div class="title_page_home"><a href="https://pham-asset.com/san-pham/dau-phong-da-ca-3.html">Đậu
-            phộng da
+        <div class="title_page_home"><a href="https://pham-asset.com/san-pham/dau-phong-da-ca-3.html">Đậu phộng da
             cá</a></div>
         <div class="item_product">
           <div class="product_image_list"><a
