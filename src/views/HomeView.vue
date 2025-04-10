@@ -21,8 +21,9 @@ export default {
             <div class="jcarousel2" data-jcarousel="true" data-jcarouselautoscroll="true">
               <ul style="left: -2310px; top: 0px;">
                 <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/snack-cua-da-nen-fzp5s705.jpg"></div>
+                  <div class="hotnews_img" style="height:300px; overflow:hidden;">
+                    <img src="https://pham-asset.com/images/Products/snack-cua-da-nen-fzp5s705.jpg">
+                  </div>
                   <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
                     <strong>SNACK CUA</strong>
                   </div>
@@ -93,8 +94,7 @@ export default {
                     <img src="https://pham-asset.com/images/Products/b3267619-ee9d-42bf-a41b-b1e7961f4148-d8y4096d.jpg">
                   </div>
                   <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>SNACK
-                      GÀ NƯỚNG</strong>
+                    <strong>SNACK GÀ NƯỚNG</strong>
                   </div>
                 </li>
                 <li style="width: 365px;">
@@ -110,8 +110,7 @@ export default {
                       src="https://pham-asset.com/images/Products/d9ab9e4c-37b2-4076-a804-6db4d010e22f-02g2ff4z.jpg">
                   </div>
                   <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>SNACK
-                      MỰC SIÊU CAY NƯỚNG</strong>
+                    <strong>SNACK MỰC SIÊU CAY NƯỚNG</strong>
                   </div>
                 </li>
                 <li style="width: 365px;">
@@ -119,8 +118,7 @@ export default {
                       src="https://pham-asset.com/images/Products/7afd053d-7786-4c96-a443-cd584a8fe842-68rlw88m.jpg">
                   </div>
                   <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>SNACK
-                      RAU CỦ QUẢ</strong>
+                    <strong>SNACK RAU CỦ QUẢ</strong>
                   </div>
                 </li>
                 <li style="width: 365px;">
@@ -128,8 +126,7 @@ export default {
                       src="https://pham-asset.com/images/Products/0df81c60-aabf-4241-8eae-ee54765298cb-oz9c8y21.jpg">
                   </div>
                   <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>SNACK
-                      TẢO BIỂN</strong>
+                    <strong>SNACK TẢO BIỂN</strong>
                   </div>
                 </li>
               </ul>
@@ -139,17 +136,19 @@ export default {
           </div>
         </div>
       </div>
-      <div class="cate_image"><a href="https://pham-asset.com/san-pham/snack-1.html"><img width="100%"
-            src="https://pham-asset.com/images/Category/snack-5t0ms0xo.jpg" alt="pham asset"></a></div>
+      <div class="cate_image">
+        <a href="https://pham-asset.com/san-pham/snack-1.html">
+          <img width="100%" src="https://pham-asset.com/images/Category/snack-5t0ms0xo.jpg" alt="pham asset"></a>
+      </div>
       <div class="body" style="margin-top:2%">
         <div class="title_page_home"><a href="https://pham-asset.com/san-pham/snack-1.html">SNACK</a></div>
         <div class="item_product">
           <div class="product_image_list"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/dau-phong-mix-party-37.html"><img
-                src="https://pham-asset.com/images/Products/snack-party-mix-full-7an8i005.jpg"></a></div>
+              href="https://pham-asset.com/san-pham/snack-jojo-7/dau-phong-mix-party-37.html">
+              <img src="https://pham-asset.com/images/Products/snack-party-mix-full-7an8i005.jpg"></a></div>
           <div class="product_name" style="font-weight:bold; margin:4% 0"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/dau-phong-mix-party-37.html">ĐẬU
-              PHỘNG MIX PARTY</a></div>
+              href="https://pham-asset.com/san-pham/snack-jojo-7/dau-phong-mix-party-37.html">
+              ĐẬU PHỘNG MIX PARTY</a></div>
           <div class="b_muangay" style="margin-bottom:6%"
             onclick="window.location='/san-pham/snack-jojo-7/dau-phong-mix-party-37.html'">Mua
             ngay</div>

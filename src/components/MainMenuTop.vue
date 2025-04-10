@@ -119,7 +119,7 @@
 </template>
 <script>
 import axios from 'axios';
-
+import { message } from 'ant-design-vue';
 export default {
     name: 'MainMenuTop',
     data() {
@@ -131,11 +131,9 @@ export default {
         async fetchMenu() {
             try {
                 const response = await axios.get('http://localhost:8080/menu');
-                this.dataMenu = response.data[16].subMenu;
-                console.log(this.dataMenu);
-
-            } catch (error) {
-                console.error('Error fetching menu:', error);
+                this.dataMenu = response.data[16].subMenu;   
+            } catch (error) { 
+                message.error('Failed to fetch menu!');  
             }
         }
     },
