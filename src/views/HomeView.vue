@@ -1,11 +1,39 @@
 <script>
+import axios from "axios";
 import MainMenu from "../components/MainMenuTop.vue"
 import Copyright from "../components/CopyRight.vue"
 import FooterHome from "../components/FooterHome.vue"
 import BodyForm from "../components/BodyForm.vue"
+import { message } from "ant-design-vue";
 export default {
   components: {
     MainMenu, Copyright, FooterHome, BodyForm
+  },
+  data() {
+    return {
+      products: [],
+    };
+  },
+  methods: {
+    fetchProducts() {
+      axios
+        .get("http://localhost:8080/products")
+        .then((response) => {
+          this.products = response.data
+          console.log(response.data);
+
+        })
+        .catch((error) => {
+          console.error("Error fetching products:", error);
+          message.error("Failed to fetch products!");
+        });
+    },
+    redirectTo(link) {
+      window.location.href = link;
+    },
+  },
+  mounted() {
+    this.fetchProducts();
   },
 };  
 </script>
@@ -20,113 +48,12 @@ export default {
           <div class="jcarousel2-wrapper">
             <div class="jcarousel2" data-jcarousel="true" data-jcarouselautoscroll="true">
               <ul style="left: -2310px; top: 0px;">
-                <li style="width: 365px;">
+                <li style="width: 365px;" v-for="product in products" :key="product.id">
                   <div class="hotnews_img" style="height:300px; overflow:hidden;">
-                    <img src="https://pham-asset.com/images/Products/snack-cua-da-nen-fzp5s705.jpg">
+                    <img :src="product.img">
                   </div>
                   <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>SNACK CUA</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/angia-sweets-snacks-35-1-iuqptv46.jpg"></div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>Rau Câu Bốn Mùa</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/angia-sweets-snacks-25-da-nen-hinh-anh-1-98p1297w.jpg">
-                  </div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>ĐẬU RÒN RÒN VỊ TÔM CAY NƯỚNG MUỐI ỚT</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/snack-party-mix-full-7an8i005.jpg"></div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>ĐẬU PHỘNG MIX PARTY</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/cafe-jl7wrij4.jpg"></div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>CÀ PHÊ HOÀ TAN MIRANO</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/e3768a9e-8a05-4cd5-a8f3-cdbb959294c3-5g17a215.jpg">
-                  </div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>ĐẬU PHỘNG DA CÁ VỊ THỊT NƯỚNG</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/angia-sweets-snacks-25-da-nen-hinh-anh-0-1-w10q00tm.jpg">
-                  </div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>ĐẬU RÒN RÒN VỊ NƯỚC CỐT DỪA</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/69bf5537-cf2a-42db-83df-4853f169ed4f-11b6g5jh.jpg">
-                  </div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>ĐẬU PHỘNG NƯỚC CỐT DỪA</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;">
-                    <img src="https://pham-asset.com/images/Products/d800c912-5524-49d3-95f3-80cd2a4dae75-95zx668g.jpg">
-                  </div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>BÁNH XỐP ỐNG NHÂN KEM VỊ MATCHA (lon)</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;">
-                    <img src="https://pham-asset.com/images/Products/b3267619-ee9d-42bf-a41b-b1e7961f4148-d8y4096d.jpg">
-                  </div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>SNACK GÀ NƯỚNG</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;">
-                    <img src="https://pham-asset.com/images/Products/e753b511-3072-4229-aad8-86d35f833286-54vl8442.jpg">
-                  </div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>SNACK KHOAI TÂY QUE</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/d9ab9e4c-37b2-4076-a804-6db4d010e22f-02g2ff4z.jpg">
-                  </div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>SNACK MỰC SIÊU CAY NƯỚNG</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/7afd053d-7786-4c96-a443-cd584a8fe842-68rlw88m.jpg">
-                  </div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>SNACK RAU CỦ QUẢ</strong>
-                  </div>
-                </li>
-                <li style="width: 365px;">
-                  <div class="hotnews_img" style="height:300px; overflow:hidden;"><img
-                      src="https://pham-asset.com/images/Products/0df81c60-aabf-4241-8eae-ee54765298cb-oz9c8y21.jpg">
-                  </div>
-                  <div class="hotnews_name" style="color:#da251e; height:25px; overflow:hidden; text-align:center;">
-                    <strong>SNACK TẢO BIỂN</strong>
+                    <strong> {{ product.name }}</strong>
                   </div>
                 </li>
               </ul>
@@ -141,7 +68,9 @@ export default {
           <img width="100%" src="https://pham-asset.com/images/Category/snack-5t0ms0xo.jpg" alt="pham asset"></a>
       </div>
       <div class="body" style="margin-top:2%">
-        <div class="title_page_home"><a href="https://pham-asset.com/san-pham/snack-1.html">SNACK</a></div>
+        <div class="title_page_home">
+          <a href="https://pham-asset.com/san-pham/snack-1.html">SNACK</a>
+        </div>
         <div class="item_product">
           <div class="product_image_list"><a
               href="https://pham-asset.com/san-pham/snack-jojo-7/dau-phong-mix-party-37.html">
