@@ -2,34 +2,36 @@
 import axios from "axios";
 import MainMenu from "../components/MainMenuTop.vue"
 import Copyright from "../components/CopyRight.vue"
-import FooterHome from "../components/FooterHome.vue"
 import BodyForm from "../components/BodyForm.vue"
 import { message } from "ant-design-vue";
+import commonMixin from "../mixins/commonMixin.js";
+
 export default {
+  mixins: [commonMixin],
   components: {
-    MainMenu, Copyright, FooterHome, BodyForm
+    MainMenu, Copyright, BodyForm
   },
   data() {
     return {
-      products: [],
+      productsSnack: [],
+      productsFeatured: [],
+      queryCallApi: {
+        type: 1,
+      }
     };
   },
   methods: {
     fetchProducts() {
       axios
-        .get("http://localhost:8080/products")
+        .get(this.urlCallApi + `products`)
         .then((response) => {
-          this.products = response.data
-          console.log(response.data);
-
+          this.productsFeatured = response.data.filter(product => product.type == 1)
+          this.productsSnack = response.data.filter(product => product.type == 2)
         })
         .catch((error) => {
           console.error("Error fetching products:", error);
           message.error("Failed to fetch products!");
         });
-    },
-    redirectTo(link) {
-      window.location.href = link;
     },
   },
   mounted() {
@@ -43,12 +45,11 @@ export default {
     <div class="body">
       <div class="bg_danhgia">
         <div class="body2" style="padding: 1% 0 2% 0;">
-          <div class="title_page_home"><a href="https://pham-asset.com/san-pham">Sản phẩm nổi
-              bật</a></div>
+          <div class="title_page_home"><a href="https://pham-asset.com/san-pham">Sản phẩm nổi bật</a></div>
           <div class="jcarousel2-wrapper">
             <div class="jcarousel2" data-jcarousel="true" data-jcarouselautoscroll="true">
               <ul style="left: -2310px; top: 0px;">
-                <li style="width: 365px;" v-for="product in products" :key="product.id">
+                <li style="width: 365px;" v-for="product in productsFeatured" :key="product.id">
                   <div class="hotnews_img" style="height:300px; overflow:hidden;">
                     <img :src="product.img">
                   </div>
@@ -64,92 +65,39 @@ export default {
         </div>
       </div>
       <div class="cate_image">
-        <a href="https://pham-asset.com/san-pham/snack-1.html">
-          <img width="100%" src="https://pham-asset.com/images/Category/snack-5t0ms0xo.jpg" alt="pham asset"></a>
+        <img width="100%" src="https://pham-asset.com/images/Category/snack-5t0ms0xo.jpg" alt="pham asset">
       </div>
+
+      <!-- ==================== SNACK ============================ -->
       <div class="body" style="margin-top:2%">
         <div class="title_page_home">
-          <a href="https://pham-asset.com/san-pham/snack-1.html">SNACK</a>
+          <a href="#">SNACK</a>
         </div>
-        <div class="item_product">
-          <div class="product_image_list"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/dau-phong-mix-party-37.html">
-              <img src="https://pham-asset.com/images/Products/snack-party-mix-full-7an8i005.jpg"></a></div>
-          <div class="product_name" style="font-weight:bold; margin:4% 0"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/dau-phong-mix-party-37.html">
-              ĐẬU PHỘNG MIX PARTY</a></div>
+        <div class="item_product" v-for="product in productsSnack" :key="product.id">
+          <div class="product_image_list">
+            <a href="#"> <img :src="product.img"> </a>
+          </div>
+          <div class="product_name" style="font-weight:bold; margin:4% 0">
+            <a href="#">{{ product.name }} </a>
+          </div>
           <div class="b_muangay" style="margin-bottom:6%"
             onclick="window.location='/san-pham/snack-jojo-7/dau-phong-mix-party-37.html'">Mua
             ngay</div>
         </div>
-        <div class="item_product">
-          <div class="product_image_list"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-ga-nuong-6.html"><img
-                src="https://pham-asset.com/images/Products/b3267619-ee9d-42bf-a41b-b1e7961f4148-d8y4096d.jpg"></a>
-          </div>
-          <div class="product_name" style="font-weight:bold; margin:4% 0"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-ga-nuong-6.html">SNACK
-              GÀ
-              NƯỚNG</a></div>
-          <div class="b_muangay" style="margin-bottom:6%"
-            onclick="window.location='/san-pham/snack-jojo-7/snack-ga-nuong-6.html'">Mua
-            ngay</div>
-        </div>
-        <div class="item_product">
-          <div class="product_image_list">
-            <a href="https://pham-asset.com/san-pham/snack-jojo-7/snack-khoai-tay-que-5.html">
-              <img src="https://pham-asset.com/images/Products/e753b511-3072-4229-aad8-86d35f833286-54vl8442.jpg"></a>
-          </div>
-          <div class="product_name" style="font-weight:bold; margin:4% 0"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-khoai-tay-que-5.html">SNACK
-              KHOAI TÂY QUE</a></div>
-          <div class="b_muangay" style="margin-bottom:6%"
-            onclick="window.location='/san-pham/snack-jojo-7/snack-khoai-tay-que-5.html'">Mua
-            ngay</div>
-        </div>
-        <div class="item_product">
-          <div class="product_image_list"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-muc-sieu-cay-nuong-3.html"><img
-                src="https://pham-asset.com/images/Products/d9ab9e4c-37b2-4076-a804-6db4d010e22f-02g2ff4z.jpg"></a>
-          </div>
-          <div class="product_name" style="font-weight:bold; margin:4% 0"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-muc-sieu-cay-nuong-3.html">SNACK
-              MỰC SIÊU CAY NƯỚNG</a></div>
-          <div class="b_muangay" style="margin-bottom:6%"
-            onclick="window.location='/san-pham/snack-jojo-7/snack-muc-sieu-cay-nuong-3.html'">Mua
-            ngay</div>
-        </div>
-        <div class="item_product">
-          <div class="product_image_list"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-rau-cu-qua-2.html"><img
-                src="https://pham-asset.com/images/Products/7afd053d-7786-4c96-a443-cd584a8fe842-68rlw88m.jpg"></a>
-          </div>
-          <div class="product_name" style="font-weight:bold; margin:4% 0"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-rau-cu-qua-2.html">SNACK
-              RAU CỦ QUẢ</a></div>
-          <div class="b_muangay" style="margin-bottom:6%"
-            onclick="window.location='/san-pham/snack-jojo-7/snack-rau-cu-qua-2.html'">Mua
-            ngay</div>
-        </div>
-        <div class="item_product">
-          <div class="product_image_list"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-tao-bien-1.html"><img
-                src="https://pham-asset.com/images/Products/0df81c60-aabf-4241-8eae-ee54765298cb-oz9c8y21.jpg"></a>
-          </div>
-          <div class="product_name" style="font-weight:bold; margin:4% 0"><a
-              href="https://pham-asset.com/san-pham/snack-jojo-7/snack-tao-bien-1.html">SNACK
-              TẢO BIỂN</a></div>
-          <div class="b_muangay" style="margin-bottom:6%"
-            onclick="window.location='/san-pham/snack-jojo-7/snack-tao-bien-1.html'">Mua
-            ngay</div>
-        </div>
         <div style="clear:both; height:20px;"></div>
       </div>
-      <div class="cate_image"><a href="https://pham-asset.com/san-pham/banh-xop-ong-2.html"><img width="100%"
-            src="https://pham-asset.com/images/Category/banh-xop-ong-fx44b9oc.jpg" alt="pham asset"></a></div>
+      <!-- ==================== SNACK ============================ -->
+
+
+      <div class="cate_image"><a href="https://pham-asset.com/san-pham/banh-xop-ong-2.html">
+          <img width="100%" src="https://pham-asset.com/images/Category/banh-xop-ong-fx44b9oc.jpg" alt="pham asset"></a>
+      </div>
+
       <div class="body" style="margin-top:2%">
-        <div class="title_page_home"><a href="https://pham-asset.com/san-pham/banh-xop-ong-2.html">Bánh
-            xốp ống</a></div>
+        <div class="title_page_home">
+          <a href="https://pham-asset.com/san-pham/banh-xop-ong-2.html">Bánh xốp ống</a>
+        </div>
+        
         <div class="item_product">
           <div class="product_image_list"><a
               href="https://pham-asset.com/san-pham/banh-xop-tanoshi-10/banh-xop-nhan-kem-vi-matcha-bac-ha-36.html"><img
@@ -365,8 +313,12 @@ export default {
         <div style="clear:both; height:20px;"></div>
       </div>
     </div>
-    <BodyForm />
-    <FooterHome />
-    <Copyright />
   </div>
+  <BodyForm />
+  <!-- <FooterHome /> -->
+  <Copyright />
 </template>
+
+<style scoped>
+@import './../assets/styles/HomeStyle.css';
+</style>

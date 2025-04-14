@@ -73,7 +73,7 @@
                     </table>
                 </div>
             </div>
-            <div class="footer_center">
+            <!-- <div class="footer_center">
                 <div class="l">
                     <div v-for="menu in leftMenu" :key="menu.id" class="menu_footer">
                         <a :href="menu.link">{{ menu.name }}</a>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <div style="clear:both; height:0px;"></div>
-            </div>
+            </div> -->
             <div style="clear:both; height:0px;"></div>
         </div>
     </div>

@@ -1,0 +1,10 @@
+.bg_menu_top{
+    cursor: default;
+}
+.product_name{
+    text-transform: uppercase;
+}
+
+* {
+    cursor: pointer;
+}

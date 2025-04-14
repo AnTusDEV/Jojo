@@ -115,13 +115,15 @@
     </div>
     <div class="bg_slogan">
         <span style="font-family: sans-serif;">CHÀO MỪNG BẠN ĐẾN VỚI THẾ GIỚI CỦA JOJO</span>
-    </div>
+</div> 
 </template>
 <script>
 import axios from 'axios';
 import { message } from 'ant-design-vue';
+import commonMixin from "../mixins/commonMixin.js";
 export default {
-    name: 'MainMenuTop',
+    name: 'MainMenuTop', 
+    mixins: [commonMixin],
     data() {
         return {
             dataMenu: []
@@ -130,18 +132,15 @@ export default {
     methods: {
         async fetchMenu() {
             try {
-                const response = await axios.get('http://localhost:8080/menu');
-                this.dataMenu = response.data[16].subMenu;   
-            } catch (error) { 
-                message.error('Failed to fetch menu!');  
+                const response = await axios.get(this.urlCallApi + "menu");
+                this.dataMenu = response.data?.[16]?.subMenu || [];
+            } catch (error) {
+                message.error("Failed to fetch menu!");
             }
         }
     },
-    mounted() {
+    mounted() { 
         this.fetchMenu();
     }
 };
 </script>
-<style scoped>
-@import './../assets/styles/MenuTop.css';
-</style>
