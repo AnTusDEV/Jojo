@@ -1,10 +1,6 @@
 .bg_menu_top{
     cursor: default;
 }
-.product_name{
+.product_name, .hotnews_name{
     text-transform: uppercase;
-}
-
-* {
-    cursor: pointer;
-}
+} 
