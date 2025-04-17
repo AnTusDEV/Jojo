@@ -1,6 +1,53 @@
-.bg_menu_top{
-    cursor: default;
+.bg_menu_top {
+  cursor: default;
 }
-.product_name, .hotnews_name{
-    text-transform: uppercase;
-} 
+
+.product_name,
+.hotnews_name {
+  text-transform: uppercase;
+}
+.item_product{
+  padding-bottom: 20px;
+}
+.floating-cart {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  svg {
+    font-size: 20px;
+    color: white;
+  }
+
+  .ant-badge-count{ 
+    background-color: red;
+    margin: -10px -5px 0px 0px; 
+  }
+}
+
+.floating-cart:hover {
+  transform: scale(1.1);
+}
+
+.product_price {
+  color: red;
+  font-weight: bold;
+}
+
+.b_muangay {
+  margin: 2% auto;
+}
+
+.b_muangay:hover {
+  color: red
+}
