@@ -54,8 +54,8 @@ export default {
           message.error("Failed to fetch products!");
         });
     },
-    formatPrice(value) {
-      if (!value) return "0 đ";
+    formatPrice(value, defaultValue = "liên hệ") {
+      if (!value) return defaultValue;
       return new Intl.NumberFormat("vi-VN").format(value) + " đ";
     },
     addCart(type, id) {
@@ -234,7 +234,7 @@ export default {
         <div style="clear:both; height:20px;"></div>
       </div>
     </div>
-    <div class="floating-cart" @click="goToCart">
+    <div class="floating-cart">
       <a-badge :count="count">
         <shopping-outlined />
       </a-badge>
